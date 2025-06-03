@@ -31,7 +31,7 @@
 
   <style>
     :root {
-      --primary-color: #FFA000;
+      --primary-color: #ffb007;
       --accent-color: #FF6F00;
       --text-color: #2c3e50;
       --bg-light: #FFF8E1;
@@ -230,7 +230,7 @@
         padding: 1rem !important;
       }
 
-      .btn-outline-primary, .btn-primary {
+      .btn-outline-dark, .btn-outline-dark {
         width: 100%;
         margin-bottom: 0.5rem;
       }
@@ -386,7 +386,7 @@
   <main class="hero fade-in">
     <div class="container">
       
-      <h1 class="display-4 fw-bold mb-3">Hi! I am María Luján García</h1>
+      <h1 class="display-4 fw-bold mb-3">Hi! I am  <span class="text-primary">María Luján García</span></h1>
       <p class="lead text-muted mb-4">Economist | Python · SQL · ML · Pandas · Data Analyst
       </p>
           <div class="text-muted mb-4 col-lg-8 mx-auto  text-justify">
@@ -408,8 +408,8 @@
     </div>
       
       <div class="d-flex justify-content-center gap-3 mb-5">
-        <a href="#cv" class="btn btn-primary btn-lg">Download my CV</a>
-        <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact me</a>
+        <a href="#cv" class="btn btn-outline-dark btn-lg text-white">Download my CV</a>
+        <a href="contact.html" class="btn btn-outline-dark btn-lg text-white">Contact me</a>
       </div>
 
       <!-- Social Links -->
@@ -417,10 +417,10 @@
         <a href="https://github.com/MLGarciaL" target="_blank" rel="noopener noreferrer" class="text-dark fs-4 social-icon">
           <i class="bi bi-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/mar%C3%ADa-luj%C3%A1n-garc%C3%ADa-5bb785234/" target="_blank" rel="noopener noreferrer" class="text-primary fs-4 social-icon">
+        <a href="https://www.linkedin.com/in/mar%C3%ADa-luj%C3%A1n-garc%C3%ADa-5bb785234/" target="_blank" rel="noopener noreferrer" class="text-dark fs-4 social-icon">
           <i class="bi bi-linkedin"></i>
         </a>
-        <a href="mailto:garciallujan@gmail.com" class="text-danger fs-4 social-icon">
+        <a href="mailto:garciallujan@gmail.com" class="text-dark fs-4 social-icon">
           <i class="bi bi-envelope-fill"></i>
         </a>
       </div>
@@ -483,14 +483,14 @@
 
             <div class="cv-buttons">
               <!-- Spanish CV Button -->
-              <button onclick="loadCV('ES')" class="btn btn-outline-primary d-flex align-items-center gap-2 justify-content-center">
+              <button onclick="loadCV('ES')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
                 <i class="bi bi-file-earmark-text"></i>
                 <span>Spanish</span>
                 <img src="https://flagcdn.com/24x18/es.png" width="24" height="18" alt="Spanish">
               </button>
 
               <!-- English CV Button -->
-              <button onclick="loadCV('EN')" class="btn btn-outline-primary d-flex align-items-center gap-2 justify-content-center">
+              <button onclick="loadCV('EN')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
                 <i class="bi bi-file-earmark-text"></i>
                 <span>English</span>
                 <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="English">
@@ -499,7 +499,7 @@
 
             <!-- Download Button -->
             <div class="text-center mb-4">
-              <a id="cvDownload" href="assets/cv/CV_MLGarcía_ES.pdf" class="btn btn-primary d-inline-flex align-items-center gap-2 justify-content-center" download>
+              <a id="cvDownload" href="assets/cv/CV_MLGarcía_ES.pdf" class="btn btn-outline-dark d-inline-flex align-items-center gap-2 justify-content-center text-white" download>
                 <i class="bi bi-download"></i>
                 <span>Download CV (Spanish)</span>
               </a>
@@ -508,7 +508,7 @@
             <!-- Preview Container -->
             <div class="cv-preview">
               <div class="ratio ratio-16x9">
-                <iframe id="cvFrame" src="assets/cv/CV_MLGarcía_ES.pdf" class="w-100 h-100" style="border:none;" title="CV Preview"></iframe>
+                <iframe id="cvFrame" src="assets/cv/CV_MLGarcía_ES.pdf" class="w-100 h-100" style="border:none;" title="Vista previa del CV"></iframe>
               </div>
             </div>
           </div>
@@ -516,7 +516,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
@@ -545,8 +544,8 @@
         </div>
       </div>
     </div>
-      <small>
-    I profoundly thank <a href="https://www.linkedin.com/in/guillebarrena/" class="text-warning text-decoration-none" target="_blank">Guillermo Barrena</a> for letting me use his template. Also visit <a href="https://guillebarrena-json.github.io/my-portfolio/index.html" class="text-warning text-decoration-none" target="_blank">Guillermo Barrena's Portfolio</a> 
+  <small>
+    I profoundly thank <a href="https://www.linkedin.com/in/guillermo-barrena" class="text-warning text-decoration-none" target="_blank">Guillermo Barrena</a> for letting me use his template.
   </small>
   </footer>
 
@@ -611,5 +610,6 @@
       });
     });
   </script>
+
 </body>
 </html>
