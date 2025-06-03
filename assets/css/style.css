@@ -88,3 +88,29 @@ footer {
   color: #aaa;
   margin-top: 2em;
 }
+
+:root {
+  --primary-color: #FF6F00;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+:root {
+  --bs-primary: #FF6F00;
+}
+
+:root {
+    --bs-primary: #FF6F00;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: color-mix(in srgb, var(--bs-primary), black 25%);
+}
+
+a {
+  color: var(--bs-link-color) !important;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color) !important;
+}
