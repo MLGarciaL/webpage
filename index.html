@@ -152,12 +152,19 @@
     #navbarMobile {position:absolute; top:100%; left:0; right:0; background: rgba(33,37,41,0.98); backdrop-filter: blur(10px); padding:1rem 0; z-index:1030;}
     #navbarMobile .nav-link {padding:0.75rem 1rem; text-align:center; font-size:1.1rem; color:white;}
 
-    @media (max-width: 768px) {
-      .hero {
-        padding: 2rem 1rem;
-        background: linear-gradient(-45deg, #FFF8E1, #FFECB3, #FFE082, #FFD54F);
-        background-size: 400% 400%;
+    @media (max-width: 360px) {
+      .experience-card {
+        margin: 0 0.5rem;
       }
+
+      .experience-card .card-body {
+        padding: 1rem !important;
+      }
+
+      .display-4 {
+        font-size: 1.75rem;
+      }
+    }
       
       .rounded-circle {
         width: 120px !important;
