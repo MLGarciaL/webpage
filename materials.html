@@ -46,7 +46,6 @@
       color: var(--text-color);
       background: var(--bg-light);
       line-height: 1.6;
-      padding-top: 76px;
     }
 
     .fade-in {
@@ -62,6 +61,15 @@
         transform: translateY(0);
       }
     }
+    .nav-link {position: relative; padding: 0.5rem 1rem; transition: color 0.3s ease;}
+    .nav-link::after {content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 50%; background-color: var(--primary-color); transition: all 0.3s ease;}
+    .nav-link:hover::after {width: 100%; left: 0;}
+    .navbar-toggler {border: none; padding: 0.25rem; color: white; background: transparent;}
+    .navbar-toggler:focus {box-shadow: none; outline: none;}
+    .navbar-toggler-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); width:24px; height:24px;}
+    header {position: fixed; top:0; left:0; right:0; z-index:1030;}
+    #navbarMobile {position:absolute; top:100%; left:0; right:0; background: rgba(33,37,41,0.98); backdrop-filter: blur(10px); padding:1rem 0; z-index:1030;}
+    #navbarMobile .nav-link {padding:0.75rem 1rem; text-align:center; font-size:1.1rem; color:white;}
 
     .experience-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
