@@ -88,3 +88,13 @@ footer {
   color: #aaa;
   margin-top: 2em;
 }
+
+.consumer-pdf-btn {
+  color: white !important;
+  border-color: var(--primary-color);
+}
+
+.consumer-pdf-btn:hover {
+  background-color: var(--primary-color);
+  color: white !important;
+}

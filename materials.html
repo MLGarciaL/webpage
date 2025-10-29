@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Class notes of María Luján García - Consumer Theory" />
+  <meta name="keywords" content="María Luján García, Microeconomics, Consumer Theory, Class Notes" />
+  <meta name="author" content="María Luján García" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Class Notes - María Luján García" />
+  <meta property="og:description" content="Consumer Theory notes and references" />
+  <meta property="og:image" content="assets/img/profile.png" />
+  <meta property="og:url" content="https://github.com/MLGarciaL" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Class Notes - MLG</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="assets/css/style.css" as="style" />
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    :root {
+      --primary-color: #ffb007;
+      --accent-color: #FF6F00;
+      --text-color: #2c3e50;
+      --bg-light: #FFF8E1; /* Same as Education page */
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 76px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-color);
+      background: var(--bg-light);
+      line-height: 1.6;
+      padding-top: 76px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .experience-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 1rem;
+      background: #ffffff; /* White cards */
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .btn-outline-dark {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    .btn-outline-dark:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white py-3 shadow-sm" style="background: rgba(33, 37, 41, 0.98) !important; backdrop-filter: blur(10px);">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-white text-decoration-none">
+        <h1 class="h5 mb-0">MLG<span class="text-primary">.</span></h1>
+      </a>
+      <nav>
+        <ul class="nav d-none d-md-flex">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+          <li class="nav-item"><a href="education.html" class="nav-link text-white">Education</a></li>
+          <li class="nav-item"><a href="experience.html" class="nav-link text-white">Experience</a></li>
+          <li class="nav-item"><a href="materials.html" class="nav-link text-white active">Class Notes</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+        </ul>
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="collapse navbar-collapse d-md-none" id="navbarMobile">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link text-white">Education</a></li>
+        <li class="nav-item"><a href="experience.html" class="nav-link text-white">Experience</a></li>
+        <li class="nav-item"><a href="materials.html" class="nav-link text-white">Class Notes</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5 fade-in">Class Notes & Materials</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Consumer Theory Under Uncertainty - vNM Theorem</h3>
+                      <h4 class="h6 text-primary mb-2">Lecture Notes - Microeconomics I</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Teaching Assistant</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Carlos Lastra</p>
+                  <p class="mb-2"><strong>References:</strong> MGW, Kreps</p>
+                  <p class="mb-2"><strong>Language:</strong> Spanish</p>
+                  <a href="assets/ClassNotes/Demostración Teorema.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Fixed Point</h3>
+                      <h4 class="h6 text-primary mb-2">Lecture Notes - Microeconomics I</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Teaching Assistant</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Carlos Lastra</p>
+                  <p class="mb-2"><strong>References:</strong> MGW, Arrow & Hahn, Nash</p>
+                  <p class="mb-2"><strong>Language:</strong> Spanish</p>
+                  <a href="assets/ClassNotes/Nash-Teorema de Punto Fijo.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+            <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Static Optimization (First Class)</h3>
+                      <h4 class="h6 text-primary mb-2">Lecture Notes - Microeconomics II</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Teaching Assistant</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Juan Marcos Pastor</p>
+                  <p class="mb-2"><strong>References:</strong> Silberberg, Intriligator</p>
+                  <p class="mb-2"><strong>Language:</strong> Spanish</p>
+                  <a href="assets/ClassNotes/Clase 1 Optimización Matemática.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Second Degree Price Discrimination</h3>
+                      <h4 class="h6 text-primary mb-2">Lecture Notes - Microeconomics II</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Teaching Assistant</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Juan Marcos Pastor</p>
+                  <p class="mb-2"><strong>References:</strong> Silberberg</p>
+                  <p class="mb-2"><strong>Language:</strong> English</p>
+                  <a href="assets/ClassNotes/Second degree price discrimination.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Cooper McLaren (1980) - Application Dynamic Optimization</h3>
+                      <h4 class="h6 text-primary mb-2">Lecture Notes - Economic Mathematics</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Adjunct Professor</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Agustin Muggiani</p>
+                  <p class="mb-2"><strong>References:</strong> Cooper McLaren (1980)</p>
+                  <p class="mb-2"><strong>Language:</strong> Spanish</p>
+                  <a href="assets/ClassNotes/Clase 12 b.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/pisa.png" alt="UniPi-SantAnna Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Capital Taxation</h3>
+                      <h4 class="h6 text-primary mb-2">Own Class Notes - Adv. Microeconomics II</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Student</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Thomas Renström</p>
+                  <p class="mb-2"><strong>References:</strong> Lucas, Lecure Notes</p>
+                  <p class="mb-2"><strong>Language:</strong> English</p>
+                  <a href="assets/ClassNotes/Capital Taxation - Primal Problem.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+            <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Consumer Theory Card -->
+          <div class="card experience-card shadow-sm mb-4 fade-in">
+            <div class="row g-0">
+              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                <img src="assets/img/pisa.png" alt="UniPi-SantAnna Logo" class="img-fluid rounded" style="max-height: 120px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                      <h3 class="h4 mb-1">Labor Taxation</h3>
+                      <h4 class="h6 text-primary mb-2">Own Class Notes - Adv. Microeconomics II</h4>
+                    </div>
+                  </div>
+                  <p class="mb-2"><strong>Position:</strong> Student</p>
+                  <p class="mb-2"><strong>Lecturer:</strong> Thomas Renström</p>
+                  <p class="mb-2"><strong>References:</strong> Mirrlees, Lecure Notes</p>
+                  <p class="mb-2"><strong>Language:</strong> English</p>
+                  <a href="assets/ClassNotes/Income Taxation.pdf" class="btn btn-outline-dark mt-3 consumer-pdf-btn" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> View / Download PDF
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0">© 2025 María Luján García.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-center text-md-end mb-0">
+            <li class="list-inline-item">
+              <a href="https://github.com/MLGarciaL" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="https://www.linkedin.com/in/mar%C3%ADa-luj%C3%A1n-garc%C3%ADa-5bb785234/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="mailto:garciallujan@gmail.com" class="text-white">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

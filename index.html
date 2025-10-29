@@ -15,7 +15,7 @@
   <meta property="og:title" content="María Luján García - Economista" />
   <meta property="og:description" content="María Luján García's professional portfolio - Economista" />
   <meta property="og:image" content="assets/img/profile.png" />
-  <meta property="og:url" content="https://[tu-usuario].github.io/my-portfolio/" />
+  <meta property="og:url" content="https://github.com/MLGarciaL" />
   <meta name="twitter:card" content="summary_large_image" />
   
   <title>María Luján García - Economista</title>
@@ -357,6 +357,7 @@
           <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
           <li class="nav-item"><a href="education.html" class="nav-link text-white">Education</a></li>
           <li class="nav-item"><a href="experience.html" class="nav-link text-white">Experience</a></li>
+          <li class="nav-item"><a href="materials.html" class="nav-link text-white">Class Notes</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
         </ul>
         <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
@@ -370,6 +371,7 @@
         <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
         <li class="nav-item"><a href="education.html" class="nav-link text-white">Education</a></li>
         <li class="nav-item"><a href="experience.html" class="nav-link text-white">Experience</a></li>
+        <li class="nav-item"><a href="materials.html" class="nav-link text-white">Class Notes</a></li>
         <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
       </ul>
     </div>
@@ -385,18 +387,18 @@
           <div class="text-muted mb-4 col-lg-8 mx-auto  text-justify">
       <h2 class="h5 fw-bold mb-3">A little bit about myself</h2>
       <p>
-        I'm from San Juan, a small (but mighty) city in Argentina. I recently graduated in Economics from Universidad Católica de Cuyo, where I currently teach Microeconomics and Mathematical Economics (Dynamics).
+        I'm currently in Pisa, Italy, pursuing the MSc in Economics jointly with the University of Pisa and the Sant’Anna School of Advanced Studies. I graduated in Economics from Universidad Católica de Cuyo, where I taught Microeconomics and Mathematical Economics (Dynamics).
       </p>
       <p>
-        I'm passionate about micro theory, which led me to casually contribute to discussions on 
-        <a href="https://economics.stackexchange.com/users/45872/lulu" target="_blank">Stack Exchange</a> just for fun.
+        My interests lie in microeconomics, behavioral economics, contract theory, mechanism design, heuristics, and bounded rationality. These interests led me to study evolutionary economics here in Pisa.
       </p>
       <p>
         I’ve also worked at the provincial Statistical Institute rebuilding databases, automating CPI analysis, and making Excel slightly less painful. I enjoy turning repetitive tasks into Python scripts—some of which you can find on 
         <a href="https://github.com/MLGarciaL" target="_blank">GitHub</a>.
       </p>
       <p>
-        Soon, I’ll be joining the MSc in Economics at the University of Pisa. I got into evolutionary economics thanks to a very enthusiastic professor, and I’ve been hooked ever since.
+        I continue to contribute casually to discussions on 
+        <a href="https://economics.stackexchange.com/users/45872/lulu" target="_blank">Stack Exchange</a>, just for fun.
       </p>
     </div>
       
@@ -488,6 +490,13 @@
                 <span>English</span>
                 <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="English">
               </button>
+
+              <!-- Italian CV Button -->
+              <button onclick="loadCV('IT')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
+                <i class="bi bi-file-earmark-text"></i>
+                <span>Italian</span>
+                <img src="https://flagcdn.com/24x18/it.png" width="24" height="18" alt="Italian">
+              </button>
             </div>
 
             <!-- Download Button -->
@@ -545,20 +554,29 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    function loadCV(lang) {
-      const frame = document.getElementById("cvFrame");
-      const download = document.getElementById("cvDownload");
-      const isSpanish = lang === "ES";
+  function loadCV(lang) {
+    const cvFrame = document.getElementById('cvFrame');
+    const cvDownload = document.getElementById('cvDownload');
 
-      frame.src = `assets/cv/CV_MLGarcía_${lang}.pdf`;
-      download.href = `assets/cv/CV_MLGarcía_${lang}.pdf`;
-      download.innerHTML = `
-        <i class="bi bi-download"></i>
-        <span>
-          ${isSpanish ? 'Download CV (Spanish)' : 'Download CV (English)'}
-        </span>
-      `;
+    switch(lang) {
+      case 'ES':
+        cvFrame.src = 'assets/cv/CV_MLGarcía_ES.pdf';
+        cvDownload.href = 'assets/cv/CV_MLGarcía_ES.pdf';
+        cvDownload.innerHTML = '<i class="bi bi-download"></i> <span>Download CV (Spanish)</span>';
+        break;
+      case 'EN':
+        cvFrame.src = 'assets/cv/CV_MLGarcía_EN.pdf';
+        cvDownload.href = 'assets/cv/CV_MLGarcía_EN.pdf';
+        cvDownload.innerHTML = '<i class="bi bi-download"></i> <span>Download CV (English)</span>';
+        break;
+      case 'IT':
+        cvFrame.src = 'assets/cv/CV_MLGarcía_IT.pdf';
+        cvDownload.href = 'assets/cv/CV_MLGarcía_IT.pdf';
+        cvDownload.innerHTML = '<i class="bi bi-download"></i> <span>Download CV (Italian)</span>';
+        break;
     }
+  }
+
 
     // Add mobile menu functionality
     document.addEventListener('DOMContentLoaded', function() {

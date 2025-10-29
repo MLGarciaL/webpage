@@ -114,3 +114,13 @@ a {
 a:hover {
   color: var(--bs-link-hover-color) !important;
 }
+
+.consumer-pdf-btn {
+  color: white !important;
+  border-color: var(--primary-color);
+}
+
+.consumer-pdf-btn:hover {
+  background-color: var(--primary-color);
+  color: white !important;
+}
