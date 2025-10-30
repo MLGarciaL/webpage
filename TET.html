@@ -11,7 +11,7 @@
     body {
         font-family: Arial, sans-serif;
         margin: 40px;             /* increase outer margin */
-        background-color: #fafafa; /* subtle background */
+        background-color: #ffffff; /* subtle background */
         line-height: 1.6;
         color: #333;
     }
@@ -19,7 +19,7 @@
         max-width: 900px;         /* limit width for readability */
         margin: 0 auto;           /* center the content */
         padding: 20px;            /* inner padding */
-        background-color: #fff;   /* white background for content */
+        background-color: #fafafa;   /* white background for content */
         box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
         border-radius: 8px;
     }
@@ -32,7 +32,7 @@
         margin-right: 2em;
     }
     .theorem {
-        background-color: #f5f5f5;
+        background-color: #fafafa;
         border-left: 4px solid #555;
         padding: 15px;
         margin: 20px 0;
@@ -122,6 +122,35 @@
         \frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial }{\partial a_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) - \boldsymbol \lambda' \frac{\partial }{\partial a_i} \boldsymbol g(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial}{\partial a_i} \mathscr L(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)
         $$</p>
     </div>
+    <h2>Interactive Example</h2>
+    <p class="note">
+        Below is a preview of the interactive visualization you can explore:
+    </p>
+
+    <img src="assets/img/TET.gif" alt="Interactive envelope theorem visualization" width="700">
+
+    <p class="note">
+        You can download the Jupyter Notebook containing all the code used to build this tool:
+    </p>
+
+    <div style="text-align:center; margin: 30px 0;">
+        <a href="assets/notebooks/TET.ipynb" download
+        style="
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ffb007;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        "
+        onmouseover="this.style.backgroundColor='#e69c00'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#ffb007'; this.style.color='#ffffff';">
+        Download Notebook (.ipynb)
+        </a>
+    </div>
+
 
 </body>
 </html>

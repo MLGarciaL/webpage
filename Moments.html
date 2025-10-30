@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;             /* increase outer margin */
+        background-color: #ffffff; /* subtle background */
+        line-height: 1.6;
+        color: #333;
+    }
+    main {
+        max-width: 900px;         /* limit width for readability */
+        margin: 0 auto;           /* center the content */
+        padding: 20px;            /* inner padding */
+        background-color: #fafafa;   /* white background for content */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
+        border-radius: 8px;
+    }
+    h2, h3 {
+        color: #222;
+    }
+    p {
+        margin-bottom: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .theorem {
+        background-color: #fafafa;
+        border-left: 4px solid #555;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    .note {
+        font-style: italic;
+        color: #555;
+    }
+    img {
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<h1>Moments</h1>
+
+<p><strong>Definition: Moments</strong> <em>If \(X\) is a random variable, the rth moment of \(X\), usually denoted by $\mu_r'$ is defined as:</em></p>
+
+<p>$$\mu_r' = \mathbb{E}\left[X^r\right]$$</p>
+
+    <h4>Interactive Example</h4>
+    <p class="note">
+        Below is a preview of the interactive visualization you can explore:
+    </p>
+
+    <img src="assets/img/Moments.gif" alt="Moments GIF">
+
+
+
+
+<p><strong>Definition: Central moments</strong> <em>If \(X\) is a random variable, the rth central moment of \(X\) about \(a\) is defined as:</em></p>
+
+<p>$$\mathbb{E}\left[(X - a)^r\right]$$</p>
+
+<p><em>If $a = \mu_X$, we have the rth central moment of \(X\) about \(\mu_X\), denoted by \(\mu_r\), which is:</em></p>
+
+<p>$$\mu_r = \mathbb{E}\left[(X - \mu_X)^r\right]$$</p>
+
+    <h4>Interactive Example</h4>
+    <p class="note">
+        Below is a preview of the interactive visualization you can explore:
+    </p>
+
+    <img src="assets/img/CentralMoments.gif" alt="Central Moments GIF">
+
+
+<p><em>Interpretation:</em></p>
+
+<p>For the <strong>zero-th moment</strong>, nothing about the actual distribution matters except that it integrates to one. It does not put any weight on the variable values themselves; it is purely a statement that probability mass is normalized.</p>
+
+<p>When we move to the <strong>first moment</strong>, now the variable values begin to matter: each outcome is weighted by its associated probability. This is why the first moment corresponds to the mean — it is the value around which the probability “balances.”</p>
+
+<p>At the <strong>second moment</strong>, the contributions grow with the square of the distance from zero. Outcomes further away from the origin contribute disproportionately more, so it's a measure that tries to capture how <strong>spread</strong> the values are from zero. This is why, once centered at the mean, the second moment becomes the variance: it measures how spread out the distribution is, how far typical values lie from the central location.</p>
+
+<p>With the <strong>third moment</strong>, the sign of the deviation comes into play. Positive values far from the mean push the moment upward, while negative values far from the mean pull it downward. A negative third moment indicates that the left tail of the distribution is heavier, while a positive one signals that the right tail is heavier. In other words, the third moment captures the <strong>skewness</strong> of the distribution — whether probability mass leans more to the left or to the right.</p>
+
+<p>At the <strong>fourth moment</strong>, distance takes on an even greater role. Values that lie far away from the mean contribute not just more, but overwhelmingly more, because the deviation is raised to the fourth power. This moment is sensitive to the tails of the distribution: whether probability is concentrated tightly around the mean or spread into rare but extreme values. Once standardized, it yields the <strong>kurtosis</strong>, which distinguishes between thin-tailed and heavy-tailed behaviors.</p>
+
+    <p class="note">
+        You can download the Jupyter Notebook containing all the code used to build this tool:
+    </p>
+
+    <div style="text-align:center; margin: 30px 0;">
+        <a href="assets/notebooks/Moments.ipynb" download
+        style="
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ffb007;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        "
+        onmouseover="this.style.backgroundColor='#e69c00'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#ffb007'; this.style.color='#ffffff';">
+        Download Notebook (.ipynb)
+        </a>
+    </div>
+
+
+
+</body>
+</html>
