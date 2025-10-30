@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Envelope Theorem</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+ <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;             /* increase outer margin */
+        background-color: #fafafa; /* subtle background */
+        line-height: 1.6;
+        color: #333;
+    }
+    main {
+        max-width: 900px;         /* limit width for readability */
+        margin: 0 auto;           /* center the content */
+        padding: 20px;            /* inner padding */
+        background-color: #fff;   /* white background for content */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
+        border-radius: 8px;
+    }
+    h2, h3 {
+        color: #222;
+    }
+    p {
+        margin-bottom: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .theorem {
+        background-color: #f5f5f5;
+        border-left: 4px solid #555;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    .note {
+        font-style: italic;
+        color: #555;
+    }
+    img {
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+</head>
+<body>
+
+    <h1>Envelope Theorem</h1>
+    <p><strong>María Luján García</strong></p>
+    <p class="note">
+        The Envelope Theorem is an important mathematical tool in economics, but its abstract nature can make it challenging to completely understand. 
+        This repository provides interactive visualization tools to help with comprehension. 
+        For a deeper understanding of the mathematical process, I highly recommend consulting Simon and Blume's book.
+    </p>
+    <p class="note">
+        The output will look like this, and you can play with the widgets to see how the indirect function changes:
+        <br><img src="assets/img/TET.png" alt="Example graph of the Envelope Theorem" width="1000">
+    </p>
+
+    <p class="note">
+        First things first:
+    </p>
+    <h2>Demonstration</h2>
+
+    <h3>Unconstrained Problem</h3>
+    <div class="theorem">
+        <p><strong>Theorem:</strong></p>
+        <p>Let \( \boldsymbol{x}^*(\boldsymbol{a}) \) be the solution of a problem depending on the parameter vector \( \boldsymbol{a} \). Then:</p>
+        <p>$$\frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial}{\partial a_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)$$</p>
+
+        <p><strong>Proof:</strong></p>
+        <p>$$
+        \frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)= 
+        \frac{\partial f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)}{\partial \boldsymbol x} 
+        \frac{\partial\boldsymbol x}{\partial a_i} + 
+        \frac{\partial f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)}{\partial a_i}
+        $$</p>
+
+        <p>By the first-order condition, the first term is zero, hence:</p>
+        <p>$$\frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial}{\partial a_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)$$</p>
+    </div>
+
+    <h3>Constrained Problem</h3>
+    <div class="theorem">
+        <p><strong>Theorem:</strong></p>
+        <p>Let \( \boldsymbol{x}^*(\boldsymbol a) \) be the solution of a problem subject to the constraints \( \boldsymbol g (\boldsymbol x) = \boldsymbol k \). Then:</p>
+        <p>$$\frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial}{\partial a_i} \mathscr L(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)$$</p>
+
+        <p><strong>Proof:</strong></p>
+        <p>$$
+        \frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)= 
+        \frac{\partial f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)}{\partial \boldsymbol x}\frac{\partial\boldsymbol x}{\partial a_i} + 
+        \frac{\partial f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)}{\partial a_i}
+        $$</p>
+
+        <p>s.t. \( \boldsymbol g(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)\equiv \boldsymbol k \)</p>
+
+        <p>Differentiating the constraint with respect to \( a_i \):</p>
+        <p>$$
+        \frac{d }{d a_i}\boldsymbol g(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = 
+        \frac{\partial \boldsymbol g}{\partial \boldsymbol x} \frac{\partial \boldsymbol x}{\partial a_i} + 
+        \frac{\partial \boldsymbol g}{\partial a_i} \equiv 0
+        $$</p>
+
+        <p>Multiply by \( \boldsymbol\lambda' \) and subtract from the derivative:</p>
+        <p>$$
+        \frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = 
+        \left[\frac{\partial f}{\partial \boldsymbol x} - \boldsymbol \lambda' \frac{\partial \boldsymbol g}{\partial \boldsymbol x}\right]\frac{\partial \boldsymbol x}{\partial a_i} + 
+        \frac{\partial f}{\partial a_i} - \boldsymbol \lambda' \frac{\partial \boldsymbol g}{\partial a_i}
+        $$</p>
+
+        <p>By the first-order condition, the first term is zero, hence:</p>
+        <p>$$
+        \frac{d}{da_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial }{\partial a_i} f(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) - \boldsymbol \lambda' \frac{\partial }{\partial a_i} \boldsymbol g(\boldsymbol x^*(\boldsymbol a); \boldsymbol a) = \frac{\partial}{\partial a_i} \mathscr L(\boldsymbol x^*(\boldsymbol a); \boldsymbol a)
+        $$</p>
+    </div>
+
+</body>
+</html>
