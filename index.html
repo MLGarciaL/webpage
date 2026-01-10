@@ -447,59 +447,62 @@
     </div>
   </section>
 
-  <!-- CV Section -->
-  <section id="cv" class="py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="cv-container">
-            <div class="text-center mb-4">
-              <h2 class="h1 mb-3">Currículum Vitae (Europass)</h2>
-              <p class="text-muted">Select the language to view or download my CV</p>
-            </div>
+ <!-- CV Section -->
+<section id="cv" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="cv-container">
+          <div class="text-center mb-4">
+            <h2 class="h1 mb-3">Currículum Vitae (Europass)</h2>
+            <p class="text-muted">Select the language to view or download my CV</p>
+          </div>
 
-            <div class="cv-buttons">
-              <!-- Spanish CV Button -->
-              <button onclick="loadCV('ES')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
-                <i class="bi bi-file-earmark-text"></i>
-                <span>Spanish</span>
-                <img src="https://flagcdn.com/24x18/es.png" width="24" height="18" alt="Spanish">
-              </button>
+<!-- Botones alineados horizontalmente -->
+<div class="d-flex justify-content-center align-items-center gap-2 flex-row flex-nowrap mb-4">
+  <!-- Spanish CV Button -->
+  <button onclick="loadCV('ES')" class="btn btn-outline-dark d-flex align-items-center gap-2">
+    <i class="bi bi-file-earmark-text"></i>
+    <span>Spanish</span>
+    <img src="https://flagcdn.com/24x18/es.png" width="24" height="18" alt="Spanish">
+  </button>
 
-              <!-- English CV Button -->
-              <button onclick="loadCV('EN')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
-                <i class="bi bi-file-earmark-text"></i>
-                <span>English</span>
-                <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="English">
-              </button>
+  <!-- English CV Button -->
+  <button onclick="loadCV('EN')" class="btn btn-outline-dark d-flex align-items-center gap-2">
+    <i class="bi bi-file-earmark-text"></i>
+    <span>English</span>
+    <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="English">
+  </button>
 
-              <!-- Italian CV Button -->
-              <button onclick="loadCV('IT')" class="btn btn-outline-dark d-flex align-items-center gap-2 justify-content-center">
-                <i class="bi bi-file-earmark-text"></i>
-                <span>Italian</span>
-                <img src="https://flagcdn.com/24x18/it.png" width="24" height="18" alt="Italian">
-              </button>
-            </div>
+  <!-- Italian CV Button -->
+  <button onclick="loadCV('IT')" class="btn btn-outline-dark d-flex align-items-center gap-2">
+    <i class="bi bi-file-earmark-text"></i>
+    <span>Italian</span>
+    <img src="https://flagcdn.com/24x18/it.png" width="24" height="18" alt="Italian">
+  </button>
+</div>
 
-            <!-- Download Button -->
-            <div class="text-center mb-4">
-              <a id="cvDownload" href="assets/cv/CV_MLGarcía_ES.pdf" class="btn btn-outline-dark d-inline-flex align-items-center gap-2 justify-content-center text-white" download>
-                <i class="bi bi-download"></i>
-                <span>Download CV (Spanish)</span>
-              </a>
-            </div>
 
-            <!-- Preview Container -->
-            <div class="cv-preview">
-              <div class="ratio ratio-16x9">
-                <iframe id="cvFrame" src="assets/cv/CV_MLGarcía_ES.pdf" class="w-100 h-100" style="border:none;" title="Vista previa del CV"></iframe>
-              </div>
+          <!-- Download Button -->
+          <div class="text-center mb-4">
+            <a id="cvDownload" href="assets/cv/CV_MLGarcía_EN.pdf" class="btn btn-outline-dark d-inline-flex align-items-center gap-2 justify-content-center text-white" download>
+              <i class="bi bi-download"></i>
+              <span>Download CV (English)</span>
+            </a>
+          </div>
+
+          <!-- Preview Container -->
+          <div class="cv-preview">
+            <div class="ratio ratio-16x9">
+              <iframe id="cvFrame" src="assets/cv/CV_MLGarcía_EN.pdf" class="w-100 h-100" style="border:none;" title="Vista previa del CV"></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
