@@ -246,25 +246,111 @@
 
 
     /* Very small screens */
-    @media (max-width: 360px) {
-      .display-4 {
-        font-size: 1.75rem;
-      }
+/* Mobile adjustments */
+@media (max-width: 768px) {
 
-      .rounded-circle {
-        width: 100px !important;
-        height: 100px !important;
-      }
+  .rounded-circle {
+    width: 120px !important;
+    height: 120px !important;
+    border: 3px solid var(--primary-color);
+  }
 
-      .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-      }
+  .position-absolute.bottom-0.end-0 {
+    transform: translate(10%, 10%) !important;
+  }
 
-      .ratio {
-        height: 250px !important;
-      }
-    }
+  .display-4 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .text-muted {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    margin: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .d-flex.justify-content-center.gap-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cv {
+    margin: 1rem;
+    padding: 1rem !important;
+  }
+
+  /* CV: botones uno debajo del otro */
+  .cv-language-buttons {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 0.5rem !important;
+  }
+
+  .cv-language-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Botón de descarga */
+  #cvDownload {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Ocultar visualizador PDF en celular */
+  .cv-preview {
+    display: none !important;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1.25rem !important;
+  }
+
+  .cv-container {
+    padding: 1rem !important;
+  }
+
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+  }
+
+  .tech-icon-wrapper p {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Very small screens */
+@media (max-width: 360px) {
+
+  .display-4 {
+    font-size: 1.75rem;
+  }
+
+  .rounded-circle {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
 
     .cv-container {
       background: white;
