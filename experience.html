@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Professional experience of María Luján García - Economist" />
-  <meta name="keywords" content="María Luján García, Work Experience, Data Analysis, IIEE, San Juan" />
+  <meta name="description" content="Education of María Luján García - Economist" />
+  <meta name="keywords" content="María Luján García, Education, Catholic University of Cuyo, Sant'Anna, University of Pisa" />
   <meta name="author" content="María Luján García" />
   
   <!-- Favicon -->
@@ -12,12 +12,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
   
   <!-- Social Media Meta Tags -->
-  <meta property="og:title" content="Experience - María Luján García" />
-  <meta property="og:description" content="Professional experience in Data Analysis and Economics" />
+  <meta property="og:title" content="Education - María Luján García" />
+  <meta property="og:description" content="Education in Data Analysis and Economics." />
   <meta property="og:url" content="https://github.com/MLGarciaL" />
   <meta name="twitter:card" content="summary_large_image" />
   
-  <title>Experience - MLG</title>
+  <title>Experience - María Luján García</title>
 
   <!-- Preload critical assets -->
   <link rel="preload" href="assets/css/style.css" as="style" />
@@ -34,62 +34,17 @@
       --text-color: #2c3e50;
       --bg-light: #FFF8E1;
     }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 76px;
-    }
-
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      color: var(--text-color);
-      background: linear-gradient(-45deg, #FFF8E1, #FFF8E1, #FFF8E1, #FFF8E1);
-      background-size: 400% 400%;
-      line-height: 1.6;
-      padding-top: 76px;
-      animation: gradient 15s ease infinite;
-      transition: all 0.3s ease;
-    }
-
+    html {scroll-behavior: smooth; scroll-padding-top: 76px;}
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text-color); background: linear-gradient(-45deg, #FFF8E1, #FFF8E1, #FFF8E1, #FFF8E1); background-size: 400% 400%; line-height: 1.6; padding-top: 76px; animation: gradient 15s ease infinite; transition: all 0.3s ease; /* Keep footer at the bottom */ min-height: 100vh; display: flex; flex-direction: column; } main { flex: 1; }
     @keyframes gradient {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      animation-delay: 0.2s;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .experience-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: none;
-      border-radius: 1rem;
-    }
-
-    .experience-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1030;
-    }
-
+    .fade-in {opacity: 0; transform: translateY(20px); animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards; animation-delay: 0.2s;}
+    @keyframes fadeIn {to {opacity:1; transform:translateY(0);}}
+    .education-card {transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; border-radius: 1rem;}
+    .education-card:hover {transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1);}
     .nav-link {position: relative; padding: 0.5rem 1rem; transition: color 0.3s ease;}
     .nav-link::after {content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 50%; background-color: var(--primary-color); transition: all 0.3s ease;}
     .nav-link:hover::after {width: 100%; left: 0;}
@@ -99,60 +54,24 @@
     header {position: fixed; top:0; left:0; right:0; z-index:1030;}
     #navbarMobile {position:absolute; top:100%; left:0; right:0; background: rgba(33,37,41,0.98); backdrop-filter: blur(10px); padding:1rem 0; z-index:1030;}
     #navbarMobile .nav-link {padding:0.75rem 1rem; text-align:center; font-size:1.1rem; color:white;}
-
-    @media (max-width: 768px) {
-
-      .display-4 {
-        font-size: 2rem;
-        margin-bottom: 2rem !important;
-      }
-
-      .experience-card {
-        margin: 0 1rem;
-      }
-
-      .experience-card .row {
-        flex-direction: column;
-      }
-
-      .experience-card .col-md-3 {
-        padding: 1.5rem !important;
-      }
-
-      .experience-card .card-body {
-        padding: 1.5rem !important;
-      }
-
-      .badge.rounded-pill {
-        position: static;
-        display: inline-block;
-        margin-bottom: 1rem;
-      }
-
-      .d-flex.justify-content-between {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
+    @media(max-width:768px) {
+      .navbar-collapse{position:absolute; top:100%; left:0; right:0; background: rgba(33,37,41,0.98); backdrop-filter: blur(10px); z-index:1030;}
+      .display-4 {font-size:2rem; margin-bottom:2rem !important;}
+      .education-card{margin:0 1rem;}
+      .education-card .row{flex-direction:column;}
+      .education-card .col-md-3{padding:1.5rem !important;}
+      .education-card .card-body{padding:1.5rem !important;}
     }
-
-    @media (max-width: 360px) {
-      .experience-card {
-        margin: 0 0.5rem;
-      }
-
-      .experience-card .card-body {
-        padding: 1rem !important;
-      }
-
-      .display-4 {
-        font-size: 1.75rem;
-      }
+    @media(max-width:360px){
+      .education-card{margin:0 0.5rem;}
+      .education-card .card-body{padding:1rem !important;}
+      .display-4{font-size:1.75rem;}
     }
   </style>
 </head>
 <body>
 
-    <!-- Header -->
+  <!-- Header -->
   <header class="bg-dark text-white py-3 shadow-sm" style="background: rgba(33,37,41,0.98)!important; backdrop-filter: blur(10px);">
     <div class="container d-flex justify-content-between align-items-center">
       <a href="index.html" class="text-white text-decoration-none">
@@ -185,199 +104,419 @@
   </header>
 
 
-  <!-- Main Content -->
-  <main class="py-5">
-    <div class="container">
-      <h2 class="display-4 text-center mb-5 fade-in">Professional Experience</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
+<!-- Main Content -->
+<main class="py-5">
+  <div class="container">
 
-          <!-- Tutoring Experience Card -->
-          <div class="card experience-card shadow-sm mb-4 fade-in">
-            <div class="row g-0">
-              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
-                <img src="assets/img/pisa.png" alt="PISA Logo" class="img-fluid rounded" style="max-height: 120px;">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <div>
-                      <h3 class="h4 mb-1">University of Pisa</h3>
-                      <h4 class="h5 text-primary mb-2">Academic Tutor</h4>
+    <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+    <div class="accordion mb-5" id="professionalAccordion">
+
+      <div class="accordion-item border-0 bg-transparent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-transparent shadow-none justify-content-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#professionalExperience"
+                  aria-expanded="false"
+                  aria-controls="professionalExperience">
+            <span class="display-4 text-center">Professional Experience</span>
+          </button>
+        </h2>
+
+        <div id="professionalExperience"
+             class="accordion-collapse collapse"
+             data-bs-parent="#professionalAccordion">
+
+          <div class="accordion-body px-0">
+
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+
+                <!-- SDA Consulting -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/SDA.jpg"
+                           alt="SDA Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
                     </div>
-                    <span class="badge bg-primary rounded-pill">Dec 2025 - Present</span>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Provided tailored academic support to MBE students, including learners with certified learning needs, non-certified special educational needs, and international students.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Adapted teaching strategies and learning materials to diverse learning styles to improve comprehension, confidence, and academic performance.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Offered individualized guidance on study methods, exam preparation, and course organization.</li>
-                  </ul>
-                  <div class="mt-3 pt-3 border-top">
-                    <h5 class="h6 mb-2">Skills - Technologies:</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                      <span class="badge bg-light text-dark">Academic Support</span>
-                      <span class="badge bg-light text-dark">Inclusive Education</span>
-                      <span class="badge bg-light text-dark">Mentoring</span>
-                      <span class="badge bg-light text-dark">Latex</span>
-                      <span class="badge bg-light text-dark">Python</span>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">SDA Consulting Data & Analytics</h3>
+                            <h4 class="h5 text-primary mb-2">Consultant</h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            Aug 2026 - Present
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Data-Driven Transformation & Management.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Training & Capability Development.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Python</span>
+                            <span class="badge bg-light text-dark">Data Analysis</span>
+                            <span class="badge bg-light text-dark">Data Management</span>
+                            <span class="badge bg-light text-dark">Power BI</span>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Teaching Experience Card -->
-          <div class="card experience-card shadow-sm mb-4 fade-in">
-            <div class="row g-0">
-              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
-                <img src="assets/img/escudocat.png" alt="UCC Logo" class="img-fluid rounded" style="max-height: 120px;">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <div>
-                      <h3 class="h4 mb-1">Catholic University of Cuyo</h3>
-                      <h4 class="h5 text-primary mb-2">Adjunct Professor & Teaching Assistant</h4>
+
+                <!-- IIEE -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/logonuevo.png"
+                           alt="IIEE Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
                     </div>
-                    <span class="badge bg-primary rounded-pill">Mar 2024 - Jul 2025</span>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Adjunct Professor for Mathematical Economics under Prof. Agustín Muggiani.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Teaching Assistant for Microeconomics I under Prof. Carlos Lastra.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Teaching Assistant for Microeconomics II under Prof. Juan Marcos Pastor.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Prepared course materials, assisted students, and graded assignments.</li>
-                  </ul>
-                  <div class="mt-3 pt-3 border-top">
-                    <h5 class="h6 mb-2">Skills - Technologies:</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                      <span class="badge bg-light text-dark">Economics</span>
-                      <span class="badge bg-light text-dark">Teaching</span>
-                      <span class="badge bg-light text-dark">Mentoring</span>
-                      <span class="badge bg-light text-dark">Curriculum Development</span>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">
+                              Institute of Economic and Statistical Research (IIEE)
+                            </h3>
+                            <h4 class="h5 text-primary mb-2">Data Analyst</h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            Feb 2024 - Jul 2024
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Developed and analyzed the Consumer Price Index (CPI) for San Juan, Argentina.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Automated price tracking processes to improve efficiency.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Reconstructed and optimized databases for better data management.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Python</span>
+                            <span class="badge bg-light text-dark">SQL</span>
+                            <span class="badge bg-light text-dark">Excel</span>
+                            <span class="badge bg-light text-dark">Statistical Analysis</span>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- IIEE Experience Card -->
-          <div class="card experience-card shadow-sm mb-4 fade-in">
-            <div class="row g-0">
-              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
-                <img src="assets/img/logonuevo.png" alt="IIEE Logo" class="img-fluid rounded" style="max-height: 120px;">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <div>
-                      <h3 class="h4 mb-1">Institute of Economic and Statistical Research (IIEE)</h3>
-                      <h4 class="h5 text-primary mb-2">Data Analyst</h4>
+
+                <!-- Frigorífico Zonda -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/friopng.png"
+                           alt="Frigorífico Zonda Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
                     </div>
-                    <span class="badge bg-primary rounded-pill">Feb 2024 - Jul 2024</span>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Developed and analyzed the Consumer Price Index (CPI) for San Juan, Argentina.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Automated price tracking processes to improve efficiency.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Reconstructed and optimized databases for better data management.</li>
-                  </ul>
-                  <div class="mt-3 pt-3 border-top">
-                    <h5 class="h6 mb-2">Skills - Technologies:</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                      <span class="badge bg-light text-dark">Python</span>
-                      <span class="badge bg-light text-dark">SQL</span>
-                      <span class="badge bg-light text-dark">Excel</span>
-                      <span class="badge bg-light text-dark">Statistical Analysis</span>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">Frigorífico Zonda</h3>
+                            <h4 class="h5 text-primary mb-2">Administrative Role</h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            Jan 2019 - Jan 2024
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Managed administrative functions with focus on reception and sales organization.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Demonstrated operational management and multitasking skills in a business environment.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Gained practical experience in business administration and customer relations.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Administration</span>
+                            <span class="badge bg-light text-dark">Customer Service</span>
+                            <span class="badge bg-light text-dark">Sales</span>
+                            <span class="badge bg-light text-dark">Operations</span>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Frigorífico Zonda Experience Card -->
-          <div class="card experience-card shadow-sm mb-4 fade-in">
-            <div class="row g-0">
-              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
-                <img src="assets/img/friopng.png" alt="Frigorífico Zonda Logo" class="img-fluid rounded" style="max-height: 120px;">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <div>
-                      <h3 class="h4 mb-1">Frigorífico Zonda</h3>
-                      <h4 class="h5 text-primary mb-2">Administrative Role</h4>
+
+                <!-- Gobierno de San Juan -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/logonuevo.png"
+                           alt="Government of San Juan Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
                     </div>
-                    <span class="badge bg-primary rounded-pill">Jan 2019 - Jan 2024</span>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Managed administrative functions with focus on reception and sales organization.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Demonstrated operational management and multitasking skills in a business environment.</li>
-                    <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Gained practical experience in business administration and customer relations.</li>
-                  </ul>
-                  <div class="mt-3 pt-3 border-top">
-                    <h5 class="h6 mb-2">Skills - Technologies:</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                      <span class="badge bg-light text-dark">Administration</span>
-                      <span class="badge bg-light text-dark">Customer Service</span>
-                      <span class="badge bg-light text-dark">Sales</span>
-                      <span class="badge bg-light text-dark">Operations</span>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">Gobierno de San Juan</h3>
+                            <h4 class="h5 text-primary mb-2">Quality Assurance Intern</h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            May 2023 - Sep 2023
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Worked with ISO 9001 quality management standards and compliance processes.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Contributed to process automation and the structuring of technical documentation and datasets.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Monitored and documented workflow processes to support quality control.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Python</span>
+                            <span class="badge bg-light text-dark">SQL</span>
+                            <span class="badge bg-light text-dark">Excel</span>
+                            <span class="badge bg-light text-dark">Google Docs</span>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- RENTAS Experience Card -->
-          <div class="card experience-card shadow-sm mb-4 fade-in">
-            <div class="row g-0">
-              <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
-                <img src="assets/img/logonuevo.png" alt="IIEE Logo" class="img-fluid rounded" style="max-height: 120px;">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <div>
-                      <h3 class="h4 mb-1">Gobierno de San Juan</h3>
-                      <h4 class="h5 text-primary mb-2">Quality Assurance Intern</h4>
-                    </div>
-                    <span class="badge bg-primary rounded-pill">May 2023 - Sep 2023</span>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle text-primary me-2"></i>
-                      Worked with ISO 9001 quality management standards and compliance processes.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle text-primary me-2"></i>
-                      Contributed to process automation and the structuring of technical documentation and datasets.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle text-primary me-2"></i>
-                      Monitored and documented workflow processes to support quality control.
-                    </li>
-                  </ul>
-                  <div class="mt-3 pt-3 border-top">
-                    <h5 class="h6 mb-2">Skills - Technologies:</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                      <span class="badge bg-light text-dark">Python</span>
-                      <span class="badge bg-light text-dark">SQL</span>
-                      <span class="badge bg-light text-dark">Excel</span>
-                      <span class="badge bg-light text-dark">Google Docs</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
+
           </div>
-          
         </div>
       </div>
     </div>
-  </main>
+
+
+    <!-- ================= ACADEMIC EXPERIENCE ================= -->
+    <div class="accordion" id="academicAccordion">
+
+      <div class="accordion-item border-0 bg-transparent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-transparent shadow-none justify-content-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#academicExperience"
+                  aria-expanded="false"
+                  aria-controls="academicExperience">
+
+            <span class="display-4 text-center">Academic Experience</span>
+
+          </button>
+        </h2>
+
+        <div id="academicExperience"
+             class="accordion-collapse collapse"
+             data-bs-parent="#academicAccordion">
+
+          <div class="accordion-body px-0">
+
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+
+                <!-- Catholic University of Cuyo -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/escudocat.png"
+                           alt="UCC Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
+                    </div>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">Catholic University of Cuyo</h3>
+                            <h4 class="h5 text-primary mb-2">
+                              Adjunct Professor & Teaching Assistant
+                            </h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            Mar 2024 - Present
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Adjunct Professor for Microeconomics II.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Adjunct Professor for Mathematical Economics.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Teaching Assistant for Microeconomics I under Prof. Carlos Lastra.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Teaching Assistant for Microeconomics II under Prof. Juan Marcos Pastor.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Economics</span>
+                            <span class="badge bg-light text-dark">Teaching</span>
+                            <span class="badge bg-light text-dark">Mentoring</span>
+                            <span class="badge bg-light text-dark">Curriculum Development</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- University of Pisa -->
+                <div class="card experience-card shadow-sm mb-4 fade-in">
+                  <div class="row g-0">
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-4">
+                      <img src="assets/img/pisa.png"
+                           alt="PISA Logo"
+                           class="img-fluid rounded"
+                           style="max-height: 120px;">
+                    </div>
+
+                    <div class="col-md-9">
+                      <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h3 class="h4 mb-1">University of Pisa</h3>
+                            <h4 class="h5 text-primary mb-2">Academic Tutor</h4>
+                          </div>
+
+                          <span class="badge bg-primary rounded-pill">
+                            Dec 2025 - May 2026
+                          </span>
+                        </div>
+
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Provided tailored academic support to MBE students, including learners with certified learning needs, non-certified special educational needs, and international students.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Adapted teaching strategies and learning materials to diverse learning styles to improve comprehension, confidence, and academic performance.
+                          </li>
+                          <li class="mb-2">
+                            <i class="bi bi-check2-circle text-primary me-2"></i>
+                            Offered individualized guidance on study methods, exam preparation, and course organization.
+                          </li>
+                        </ul>
+
+                        <div class="mt-3 pt-3 border-top">
+                          <h5 class="h6 mb-2">Skills - Technologies:</h5>
+                          <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark">Academic Support</span>
+                            <span class="badge bg-light text-dark">Inclusive Education</span>
+                            <span class="badge bg-light text-dark">Mentoring</span>
+                            <span class="badge bg-light text-dark">Latex</span>
+                            <span class="badge bg-light text-dark">Python</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
